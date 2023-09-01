@@ -9,6 +9,7 @@
     <link rel="shortcut icon" type="imagex/png" href="./assets/imgs/Gear.png">
     <link rel="stylesheet" href="./css/styles.css">
     <title>GUI CORTES │ TM</title>
+    <!-- alterações: adicionada sessão de equipe; atualização da barra horizontal do cabeçalho; botão de contato do cabeçalho funcionando. -->
 </head>
 <body>
     <main>
@@ -21,11 +22,12 @@
                   </a>
                   
                   <div class="flex items-center lg:order-2">
-                      <button class="inline-flex items-center saibamais border-0 py-1 px-4 focus:outline-none rounded-full text-white md:mt-0 bg-yellow-500 hover:bg-gray-200 hover:text-yellow-500 duration-300 ease-in-out">contato
+                      <a href="#contato"><button class="inline-flex items-center saibamais border-0 py-1 px-4 focus:outline-none rounded-full text-white md:mt-0 bg-yellow-500 hover:bg-gray-200 hover:text-yellow-500 duration-300 ease-in-out">contato
                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
                           <path d="M5 12h14M12 5l7 7-7 7"></path>
                         </svg>
-                      </button>
+                        </button>
+                      </a>
                       
                       <button data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-gray-200 hover:text-white focus:ring-gray-600" aria-controls="mobile-menu-2" aria-expanded="false">
                           <span class="sr-only">abrir menu</span>
@@ -36,13 +38,14 @@
                   
                   <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
                       <ul class="flex flex-col mt-4 lg:flex-row lg:space-x-8 lg:mt-0">
+                          
                           <li>
-                              <a href="#" class="block py-2 pl-3 text-gray-600 rounded lg:bg-transparent lg:text-primary-700 lg:p-0 hover:text-yellow-500">alguma coisa</a>
+                            <a href="#vantagens" class="block py-2 pl-3 text-gray-600 rounded lg:bg-transparent lg:text-primary-700 lg:p-0 hover:text-yellow-500">vantagens</a>
                           </li>
 
                           <li>
-                            <a href="#etapas" class="block py-2 pl-3 text-gray-600 rounded lg:bg-transparent lg:text-primary-700 lg:p-0 hover:text-yellow-500">vantagens</a>
-                          </li>
+                            <a href="#nossa-equipe" class="block py-2 pl-3 text-gray-600 rounded lg:bg-transparent lg:text-primary-700 lg:p-0 hover:text-yellow-500">nossa equipe</a>
+                          </li> 
 
                           <li>
                             <a href="#projetos" class="block py-2 pl-3 text-gray-600 rounded lg:bg-transparent lg:text-primary-700 lg:p-0 hover:text-yellow-500">projetos</a>
@@ -63,9 +66,8 @@
           <div class="container px-5 py-24 mx-auto text-center">
 
             <div class="flex flex-col text-center mb-5 mt-16">
-              <h1 class=" font-bold title-font mb-4 text-gray-400 text-5xl">
-                Já pensou em ter um <span class="text-yellow-500">site</span> <br>
-                com a cara da sua empresa?
+              <h1 class=" font-bold title-font mb-4 text-gray-400 text-5xl select-none">
+                Já pensou em um site <br> com a cara do seu <span id="element" class="text-yellow-500"></span>
               </h1>
               <p class="lg:w-2/3 mx-auto leading-relaxed text-xl text-gray-400">
                 você tem uma visão para o seu negócio ou projeto, mas não sabe <br>
@@ -85,16 +87,16 @@
         </section>
     </main>
 
-    <!-- linha do tempo -->
+    <!-- vantagens -->
     <section class="text-white body-font bg-yellow-500">
-      <div class="text-5xl font-bold text-center pt-24 c3" id="etapas">Nós temos a solução para você</div>
+      <div class="text-5xl font-bold text-center pt-24 c3" id="vantagens">Nós temos a solução para você</div>
       <div class="container px-5 py-24 mx-auto flex flex-wrap">
         <div class="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">
           <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
             <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
           </div>
 
-          <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-white text-yellow-500 relative z-10 title-font font-medium text-sm">1</div>
+          <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-white text-yellow-500 relative z-10 title-font font-medium text-sm"></div>
           <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row b3">
             <div class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-yellow-500 rounded-full inline-flex items-center justify-center">
               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
@@ -112,7 +114,7 @@
           <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
             <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
           </div>
-          <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-white text-yellow-500 relative z-10 title-font font-medium text-sm">2</div>
+          <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-white text-yellow-500 relative z-10 title-font font-medium text-sm"></div>
           <div class="b4 flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
             <div class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-yellow-500 rounded-full inline-flex items-center justify-center">
               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
@@ -130,7 +132,7 @@
           <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
             <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
           </div>
-          <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-white text-yellow-500 relative z-10 title-font font-medium text-sm">3</div>
+          <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-white text-yellow-500 relative z-10 title-font font-medium text-sm"></div>
           <div class="b5 flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
             <div class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-yellow-500 rounded-full inline-flex items-center justify-center">
               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
@@ -149,7 +151,7 @@
           <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
             <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
           </div>
-          <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-white text-yellow-500 relative z-10 title-font font-medium text-sm">4</div>
+          <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-white text-yellow-500 relative z-10 title-font font-medium text-sm"></div>
           <div class="b6 flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
             <div class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-yellow-500 rounded-full inline-flex items-center justify-center">
               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
@@ -165,9 +167,120 @@
       </div>
     </section>
 
+    <!-- nossa equipe -->
+    <section class="text-gray-600 body-font" id="nossa-equipe">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-col text-center w-full mb-20">
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-400 text-center c3">conheça mais a</p>
+          <div class="text-3xl font-bold text-center c4 text-yellow-500" id="etapas">nossa equipe</div>
+        </div>
+        <div class="flex flex-wrap -m-2">
+          <div class="p-2 lg:w-1/3 md:w-1/2 w-full c3">
+            <div class="h-full flex flex-col items-center border-gray-200 border p-4 rounded-lg text-center">
+                <img alt="team" class="w-32 h-32 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mb-4" src="assets/imgs/marcow.jpg">
+                <div class="flex-grow">
+                    <h2 class="text-gray-900 title-font font-medium">Marcos Côrrea</h2>
+                    <p class="text-gray-500">Desenvolvedor web</p>
+                    <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta sapiente beatae saepe.</p>
+                    <div class="flex justify-center items-center space-x-1">
+                      <a href="#" data-tooltip-target="tooltip-instagram-marcos" class="inline-flex justify-center p-2 text-gray-500 rounded-lg cursor-pointer hover:text-white hover:text-gray-900 hover:bg-yellow-500">
+                          <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                              <path fill-rule="evenodd" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" clip-rule="evenodd" />
+                          </svg>
+                          <span class="sr-only">Instagram</span>
+                      </a>
+                      <div id="tooltip-instagram-marcos" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-yellow-500 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip">
+                          acessar o Instagram
+                          <div class="tooltip-arrow" data-popper-arrow></div>
+                      </div>
+
+                      <a href="#" data-tooltip-target="tooltip-linkedin-marcos" class="inline-flex justify-center p-2 text-gray-500 rounded-lg cursor-pointer hover:text-white hover:text-gray-900 hover:bg-yellow-500">
+                        <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z clip-rule="evenodd" />
+                        </svg>
+                        <span class="sr-only">LinkedIn</span>
+                      </a>
+                      <div id="tooltip-linkedin-marcos" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-yellow-500 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip">
+                        acessar o LinkedIn
+                        <div class="tooltip-arrow" data-popper-arrow></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          
+          <div class="p-2 lg:w-1/3 md:w-1/2 w-full c4">
+            <div class="h-full flex flex-col items-center border-gray-200 border p-4 rounded-lg text-center">
+                <img alt="team" class="w-32 h-32 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mb-4" src="assets/imgs/nicolas.jpeg">
+                <div class="flex-grow">
+                    <h2 class="text-gray-900 title-font font-medium">Nicolas Mota</h2>
+                    <p class="text-gray-500">Desenvolvedor web</p>
+                    <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet rerum consectetur.</p>
+                    <div class="flex justify-center items-center space-x-1">
+                      <a href="#" data-tooltip-target="tooltip-instagram-nicolas" class="inline-flex justify-center p-2 text-gray-500 rounded-lg cursor-pointer hover:text-white hover:text-gray-900 hover:bg-yellow-500">
+                          <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                              <path fill-rule="evenodd" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" clip-rule="evenodd" />
+                          </svg>
+                          <span class="sr-only">Instagram</span>
+                      </a>
+                      <div id="tooltip-instagram-nicolas" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-yellow-500 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip">
+                          acessar o Instagram
+                          <div class="tooltip-arrow" data-popper-arrow></div>
+                      </div>
+
+                      <a href="#" data-tooltip-target="tooltip-linkedin-nicolas" class="inline-flex justify-center p-2 text-gray-500 rounded-lg cursor-pointer hover:text-white hover:text-gray-900 hover:bg-yellow-500">
+                        <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z clip-rule="evenodd" />
+                        </svg>
+                        <span class="sr-only">LinkedIn</span>
+                      </a>
+                      <div id="tooltip-linkedin-nicolas" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-yellow-500 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip">
+                        acessar o LinkedIn
+                        <div class="tooltip-arrow" data-popper-arrow></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        
+          <div class="p-2 lg:w-1/3 md:w-1/2 w-full c5">
+            <div class="h-full flex flex-col items-center border-gray-200 border p-4 rounded-lg text-center">
+                <img alt="team" class="w-32 h-32 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mb-4" src="assets/imgs/gabriel.jpeg">
+                <div class="flex-grow">
+                    <h2 class="text-gray-900 title-font font-medium">Gabriel da Silva</h2>
+                    <p class="text-gray-500">Desenvolvedor web</p>
+                    <p class="text-gray-500">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus quibusdam minima.</p>
+                    <div class="flex justify-center items-center space-x-1">
+                      <a href="#" data-tooltip-target="tooltip-instagram-gabriel" class="inline-flex justify-center p-2 text-gray-500 rounded-lg cursor-pointer hover:text-white hover:text-gray-900 hover:bg-yellow-500">
+                          <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                              <path fill-rule="evenodd" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" clip-rule="evenodd" />
+                          </svg>
+                          <span class="sr-only">Instagram</span>
+                      </a>
+                      <div id="tooltip-instagram-gabriel" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-yellow-500 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip">
+                          acessar o Instagram
+                          <div class="tooltip-arrow" data-popper-arrow></div>
+                      </div>
+
+                      <a href="#" data-tooltip-target="tooltip-linkedin-gabriel" class="inline-flex justify-center p-2 text-gray-500 rounded-lg cursor-pointer hover:text-white hover:text-gray-900 hover:bg-yellow-500">
+                        <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z clip-rule="evenodd" />
+                        </svg>
+                        <span class="sr-only">LinkedIn</span>
+                      </a>
+                      <div id="tooltip-linkedin-gabriel" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-yellow-500 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip">
+                        acessar o LinkedIn
+                        <div class="tooltip-arrow" data-popper-arrow></div>
+                      </div>
+                    </div>
+            </div>
+          </div>
+      </div>
+    </section>
+  
     <!-- portifólio -->
     <div id="projetos"></div>
-    <main class="mt-24">
+    <main class="mt-1">
       <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-400 text-center c3">
         nosso portifólio
       </p>
@@ -326,7 +439,8 @@
       </section>
 
       <!-- contato -->
-      <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-400 text-center c3" id="contato">
+    <section id="contato">
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-400 text-center c3">
         vamos conversar
       </p>
       <h1 class="sm:text-3xl text-2xl font-bold title-font text-gray-400 text-center c4">
@@ -415,6 +529,7 @@
           </div>
         </div>
       </section>
+    </section>
       <!-- rodapé -->
       <footer class="t3 bg-white rounded-lg shadow sm:flex sm:items-center sm:justify-between p-4 sm:p-6 xl:p-8">
         <p class="mb-4 text-sm text-center text-gray-500 dark:text-gray-400 sm:mb-0">
@@ -457,6 +572,7 @@
     </main>
 
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>
